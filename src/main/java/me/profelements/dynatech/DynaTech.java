@@ -56,8 +56,8 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         setInstance(this);
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50L.cc/gzlib");
+            getLogger().log(Level.SEVERE, "This plugin requires GuizhanLibPlugin to run!");
+            getLogger().log(Level.SEVERE, "Download here: https://50L.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -111,7 +111,7 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         }
 
         if (!Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_19)) {
-            getLogger().warning("DynaTech 仅支持 1.19+，请更新服务器版本后运行本插件。");
+            getLogger().warning("DynaTech only supports 1.19+, please update your server version to run this plugin.");
             getServer().getPluginManager().disablePlugin(this);
         }
 
