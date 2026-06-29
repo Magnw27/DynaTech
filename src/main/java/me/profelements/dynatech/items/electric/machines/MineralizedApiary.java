@@ -36,7 +36,7 @@ public class MineralizedApiary extends AbstractElectricMachine {
     private ItemStack material = new ItemStack(Material.AIR);
 
 
-    private static final ItemStack PROGRESS_STACK = new CustomItemStack(Material.BEACON, "&f信息", "&f蜜蜂数量：{}", "&f生产速率：{}");
+    private static final ItemStack PROGRESS_STACK = new CustomItemStack(Material.BEACON, "&fInformation", "&fBee Count: {}", "&fProduction Rate: {}");
 
 
     public MineralizedApiary(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, ItemStack material) {
@@ -85,11 +85,11 @@ public class MineralizedApiary extends AbstractElectricMachine {
             int count = hive.getEntityCount();
             
             if (count == 1) {
-                //30 second recipe if 1 bee; 
+                // 30 second recipe if 1 bee; 
                 return new MachineRecipe(30, new ItemStack[] { this.material }, new ItemStack[] { this.material }); 
             } else if (count > 1) {
-                // Minus 10 from 30 seconds other wise;
-                return new MachineRecipe(30 - ((count -1) * 10), new ItemStack[] { this.material }, new ItemStack[] { this.material }); 
+                // Subtract 10 from 30 seconds otherwise;
+                return new MachineRecipe(30 - ((count - 1) * 10), new ItemStack[] { this.material }, new ItemStack[] { this.material }); 
             }
         }
 
@@ -154,8 +154,8 @@ public class MineralizedApiary extends AbstractElectricMachine {
         ItemStack item = PROGRESS_STACK.clone();
         ItemMeta meta = item.getItemMeta();
 
-        meta.setDisplayName(ChatUtil.color("&f信息"));
-        meta.setLore(ChatUtil.color(List.of("&f蜜蜂数量：" + beeCount, "&f生产速率：" + currSpeed + "秒")));
+        meta.setDisplayName(ChatUtil.color("&fInformation"));
+        meta.setLore(ChatUtil.color(List.of("&fBee Count: " + beeCount, "&fProduction Rate: " + currSpeed + " seconds")));
         item.setItemMeta(meta);
 
         menu.replaceExistingItem(20, item);
