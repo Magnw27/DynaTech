@@ -1,17 +1,17 @@
 ## CHANGE this to the name of your plugin.
-name: DynaTech
+name: DynaTechCraftnesia
 
 ## CHANGE this to your username.
-author: ProfElements
+author: Arip/asnoo
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A slimefun addon that add random stuff I want
+description: sf addon dynatech remake by asnoo
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.profelements.dynatech.DynaTech
 
 ## You can change this to link to your website or repository. You can also remove this line if you want to.
-website: https://github.com/ProfElements/DynaTech
+website: https://github.com/Magnw27/DynaTech | repo asnoo
 
 ## This is required and marks Slimefun as a plugin dependency.
 depend: [Slimefun]
