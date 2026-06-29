@@ -103,8 +103,8 @@ public class FluidTank extends SlimefunItem implements Listener {
         }
 
         ArrayList<String> lore = new ArrayList<>();
-        lore.add(ChatColor.WHITE + "当前液体：" + FluidUtils.getFluidType(handFluid.fluid()));
-        lore.add(ChatColor.WHITE + "存量：" + handFluid.amount());
+        lore.add(ChatColor.WHITE + "Current Liquid: " + FluidUtils.getFluidType(handFluid.fluid()));
+        lore.add(ChatColor.WHITE + "Amount: " + handFluid.amount());
         handMeta.setLore(lore);
         handItem.setItemMeta(handMeta);
 
@@ -142,8 +142,8 @@ public class FluidTank extends SlimefunItem implements Listener {
         } else {
 
             ArrayList<String> lore = new ArrayList<>();
-            lore.add(ChatColor.WHITE + "当前液体：" + FluidUtils.getFluidType(handFluid.fluid()));
-            lore.add(ChatColor.WHITE + "存量：" + handFluid.amount());
+            lore.add(ChatColor.WHITE + "Current Liquid: " + FluidUtils.getFluidType(handFluid.fluid()));
+            lore.add(ChatColor.WHITE + "Amount: " + handFluid.amount());
             handMeta.setLore(lore);
         }
 
