@@ -27,4 +27,4 @@ rencana saya akan menambahkan tools baru dari dynatech
 
  [Slimefun](https://github.com/slimefun/slimefun4) for being incredibly intuitive to make an addon for and overall being generally helpful when needing examples.
 
- [Chinese](https://github.com/sSlimefunGuguProject) looking for chinese version? visit this
+ [Chinese](https://github.com/SlimefunGuguProject) looking for chinese version? visit this
