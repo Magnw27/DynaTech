@@ -31,16 +31,16 @@ public class ItemGroups {
             GENERAL, new CustomItemStack(Material.DIAMOND_AXE, "&bTools"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(Keys.MACHINES.key(), GENERAL,
-            new CustomItemStack(Material.SEA_LANTERN, "&bMachine sayang"));
+            new CustomItemStack(Material.SEA_LANTERN, "&bMachine"));
 
     public static final SubItemGroup GENERATORS = new SubItemGroup(Keys.GENERATORS.key(), GENERAL,
-            new CustomItemStack(Material.PRISMARINE_BRICKS, "&bGenerator sayang"));
+            new CustomItemStack(Material.PRISMARINE_BRICKS, "&bGenerator"));
 
     public static final SubItemGroup EXPERIMENTAL = new SubItemGroup(Keys.EXPERIMENTAL.key(), GENERAL,
-            new CustomItemStack(Material.REDSTONE_LAMP, "&fExpereimental sayang"));
+            new CustomItemStack(Material.REDSTONE_LAMP, "&fExpereimental"));
 
     public static final SubItemGroup HIVES = new SubItemGroup(Keys.APIARIES.key(),
-            GENERAL, new CustomItemStack(Material.BEEHIVE, "&bApiary sayang"));
+            GENERAL, new CustomItemStack(Material.BEEHIVE, "&bApiary"));
 
     public static final class Keys {
         public static final TypedKey<ItemGroup> GENERAL = TypedKey.create("dynatech", "general");
